@@ -1,0 +1,980 @@
+/* basic css start */
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.clr {
+    clear: both;
+}
+
+.fullWrapper {
+    width: 100%;
+}
+
+img {
+    vertical-align: middle;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: darkcyan;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+h1::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    left: 0;
+    top: 110%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 121, 255, 1) 63%, rgba(0, 212, 255, 1) 100%);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* basic css end */
+
+
+
+
+
+/* nav css start */
+nav {
+    background-color: darkgray;
+    position: fixed !important;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+.logo {
+    width: 20%;
+    float: left;
+}
+
+.logo a {
+    font-family: 'Pattaya';
+    font-size: 40px;
+    color: black;
+}
+
+.menu {
+    width: 80%;
+    float: left;
+}
+
+.menu ul {
+    float: right;
+}
+
+.menu ul li {
+    float: left;
+    padding: 20px 15px;
+    transition: all 0.3s linear;
+}
+
+.menu a {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: all 0.3s linear;
+    position: relative;
+}
+.menu ul li a::after{
+    content: " ";
+    position: absolute;
+    height: 1px;
+    width: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 120%;
+    background-color: lavenderblush;
+}
+.menu ul li:hover {
+    background-color: black;
+    cursor: pointer;
+    
+}
+
+.menu ul li:hover a {
+    color: blanchedalmond;
+}
+.menu ul li:hover a::after{
+    width: 100%;
+    
+}
+
+/* nav css end */
+
+/* banner css start */
+.banner {
+    background: url(../images/banner.jpg) left top no-repeat;
+    background-size: cover;
+
+}
+
+.aboutMe {
+    padding: 100px 0;
+    text-align: center;
+    color: honeydew;
+    position: relative;
+}
+
+.myPhoto {
+    position: relative;
+}
+
+.myPhoto img {
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    transform: scale(0.8);
+    transition: all 0.3s linear;
+    border: 1px solid black;
+
+
+}
+
+.more {
+    position: relative;
+}
+
+.myPhoto img:hover {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(51, 48, 48, 0.972);
+}
+
+.aboutMe h2 {
+
+    width: 48%;
+    line-height: 30pt;
+    overflow: hidden;
+    border-right: .15em solid rgba(0, 0, 128, 0.493);
+    white-space: nowrap;
+    margin: 30px auto;
+
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 48%
+    }
+}
+
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    40%,
+    to {
+        border-color: rgba(0, 0, 128, 0.493);
+    }
+
+
+}
+
+.aboutMe::before {
+    position: absolute;
+    content: " ";
+    left: 40%;
+    top: 21%;
+    height: 2px;
+    width: 50px;
+    background-color: navy;
+}
+
+.myPhoto::before {
+    position: absolute;
+    content: " ";
+    left: 40%;
+    top: 1px;
+    height: 100%;
+    width: 2px;
+    background-color: navy;
+}
+
+.more::before {
+    position: absolute;
+    content: " ";
+    left: 10%;
+    top: -480%;
+    height: 2px;
+    width: 50px;
+    background-color: navy;
+    animation: none;
+}
+
+.aboutMe::after {
+    position: absolute;
+    content: " ";
+    right: 40%;
+    top: 100px;
+    height: 2px;
+    width: 50px;
+    background-color: navy;
+}
+
+.myPhoto::after {
+    position: absolute;
+    content: " ";
+    right: 40%;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: navy;
+}
+
+.more::after {
+    position: absolute;
+    content: " ";
+    right: 10%;
+    top: -480%;
+    height: 2px;
+    width: 50px;
+    background-color: navy;
+    animation: none !important;
+}
+
+.aboutMe span {
+
+    color: #000;
+    font-size: 38px;
+
+}
+
+.aboutMe a {
+    color: black;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 25px;
+    border: 1px solid red;
+    border-radius: 25px;
+}
+
+.aboutMe a:hover {
+    background: red;
+    color: seashell;
+    transition: all 0.3s ease;
+}
+
+/* banner css end */
+
+/* about css start */
+.about {
+
+    padding-top: 60px;
+    background-color: linen;
+}
+
+.about_col {
+    width: 50%;
+    float: left;
+    position: relative;
+}
+
+.about .about_col:nth-child(2) {
+    padding: 150px 0;
+}
+
+.about_col h1 {
+    display: inline-block;
+}
+
+.about_col p {
+    padding: 20px 0;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px #000333;
+    font-style: italic;
+    background-color: gainsboro;
+    margin: 10px 0;
+}
+
+.about_col a {
+    float: right;
+    text-transform: uppercase;
+    color: #008B8B;
+    font-weight: 500;
+    border-bottom: 1px solid red;
+    transition: all 0.3s linear;
+}
+
+.about_col a:hover {
+    color: navy;
+    font-weight: 700;
+    border-bottom: 1px solid transparent;
+
+}
+
+.backshape {
+    position: absolute;
+    left: -150px;
+    top: 10%;
+    z-index: -1;
+}
+
+.backshape img {
+    width: 100%;
+}
+
+/* about css end */
+
+/* education css start */
+#education {
+    background-color: #01233d;
+    background-attachment: fixed;
+}
+
+.edu {
+    padding: 100px 0;
+}
+
+.edu_col {
+    position: relative;
+    float: left;
+    width: 30%;
+    margin: 0 17px;
+    padding: 15px 0;
+    text-align: center;
+    background-color: lightblue;
+    border-radius: 5px;
+    transform: scale(0.9);
+    transition: all 0.5s ease-in-out;
+
+
+}
+
+.cover {
+    position: absolute;
+    visibility: hidden;
+    left: 4%;
+    top: 5%;
+    bottom: 5%;
+    background-color: #000080d4;
+    transition: all 0.5s linear;
+    width: 0%;
+    box-shadow: 6 0 0px;
+    border: 2px slod black;
+    box-shadow: 11px 2pxpx 0px #000;
+    border: 5px solid #00000033;
+    padding: 5px;
+    box-shadow: 0px 0px 0px 5px #0e3fd647;
+}
+
+.cover i {
+    color: transparent;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-size: 30px;
+    display: none;
+
+}
+
+.edu_col:hover {
+    transform: scale(1);
+
+    box-shadow: 0 0 6px rgb(11, 83, 141);
+    transition: all 0.5s ease-in-out;
+
+}
+
+.edu_col:hover .cover {
+    width: 90%;
+    visibility: visible;
+}
+
+.edu_col:hover .cover i {
+    color: linen;
+    display: block;
+}
+
+.edu h1 {
+    width: 25%;
+    margin: 40px 0;
+}
+
+.edu h2 {
+    text-transform: uppercase;
+    color: blue;
+}
+
+.edu p {
+    padding: 10px 25px;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+/* education css end */
+
+/* certification css start */
+#certifications {
+    background-color: lavenderblush;
+}
+
+.certification {
+    padding: 100px 0;
+}
+
+.certification h1 {
+    display: table;
+    margin: auto;
+}
+
+#quoted {
+    display: table;
+    margin: 20px auto;
+    font-size: 16px;
+}
+
+.cerCol {
+    margin: 50px 0;
+}
+
+.image {
+    position: relative;
+    height: 200px;
+    width: 23%;
+    float: left;
+    margin: 13px;
+
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #3672e0;
+}
+
+.one {
+    position: absolute;
+    height: 150px;
+    width: 86%;
+    top: 15px;
+    left: 20px;
+    border: 1px solid navy;
+    border-radius: 2px;
+    background-color: rgba(135, 206, 250, 0.486);
+    transition: all 0.5s linear;
+    clip-path: polygon(100% 0, 0 100%, 0 0);
+}
+
+.two {
+    position: absolute;
+    height: 150px;
+    width: 86%;
+    top: 15px;
+    right: 20px;
+    border: 1px solid navy;
+    border-radius: 2px;
+    background-color: rgba(135, 206, 250, 0.486);
+    transition: all 0.5s linear;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+.image:hover .overlay {
+    width: 50%;
+
+
+}
+
+.image:hover img {
+    box-shadow: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.one .icon {
+    position: absolute;
+    top: 52%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    color: navy;
+}
+
+.two .icon {
+    position: absolute;
+    top: 52%;
+    right: 30%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    color: navy;
+}
+
+.icon i:hover {
+    color: orangered;
+    cursor: pointer;
+}
+
+.certification a {
+    display: table;
+    margin: auto;
+    text-transform: uppercase;
+    color: #008B8B;
+    font-weight: 500;
+    border: 1px solid red;
+    padding: 15px 20px;
+    border-radius: 30px;
+}
+
+.certification a:hover {
+    background-color: navy;
+    color: oldlace;
+    border: 1px solid transparent;
+    padding: 15px 20px;
+    transition: all 0.3s linear;
+}
+
+/* certification css end */
+
+/* trainings css start */
+
+/* trainings css end */
+.training{
+    background-color: #fff;
+    padding: 70px 0;
+}
+.training h1 {
+    width: 22%;
+    margin: auto;
+}
+.tBox{
+    margin: 50px 0;
+    position: relative;
+}
+.tOverlay{
+    position: absolute;
+    width: 35%;
+    height: 185px;
+    background-color: #fff0f594;
+    left: 1%;
+    top: 4%;
+    transform: scale(0);
+    transition: all 0.3s ease-in-out;
+}
+.tBox img{
+    height: 250px;
+    width: 450px;
+    box-shadow: 0 0 8px 2px;
+    transition: all 0.5s ease-in-out;
+    
+}
+.tBox:hover .tOverlay{
+    transform: scale(1);
+}
+.tBox:hover img{
+    height: 200px;
+    width: 400px;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+.tshape{
+    width: 30px !important;
+    box-shadow: none !important;
+}
+.tBox p{
+    width: 50%;
+    float: right;
+    padding-top: 60px;
+    text-align: justify;
+}
+.tOverlay h3{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+/* skills css start */
+#skills {
+    background: url(../images/bg.jpg) left top no-repeat;
+    background-size: cover;
+    padding: 30px 0;
+    background-attachment: fixed;
+}
+
+.skills {
+    margin-bottom: 150px;
+}
+
+.skills h1 {
+    width: 25%;
+    margin: 40px 0;
+}
+
+.skills h2 {
+    text-transform: uppercase;
+    color: linen;
+}
+
+.full {
+    height: 50px;
+    width: 100%;
+    position: relative;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+
+.box-1 {
+    background-color: orchid;
+}
+
+@keyframes subBoxOne {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 42%;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+.subbox-1 {
+
+    background-color: palegreen;
+    width: 85%;
+    animation: subBoxOne 3s linear forwards;
+}
+
+.box-2 {
+    background-color: rgb(230, 251, 33);
+}
+
+@keyframes subBoxTwo {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 45%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+.subbox-2 {
+    background-color: rgb(255, 70, 70);
+    width: 90%;
+    animation: subBoxTwo 3s linear forwards;
+}
+
+.box-3 {
+    background-color: rgb(101, 253, 109);
+}
+
+@keyframes subBoxThree {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 35%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+.subbox-3 {
+    background-color: rgb(47, 50, 236);
+    width: 70%;
+    animation: subBoxThree 3s linear forwards;
+}
+
+.box-4 {
+    background-color: rgb(100, 100, 100);
+
+}
+
+@keyframes subBoxFour {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 37%;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+.subbox-4 {
+    background-color: rgb(136, 9, 9);
+    width: 75%;
+    animation: subBoxFour 3s linear forwards;
+}
+
+/* skills css end */
+
+/* portfolio css start */
+#portfolio h1 {
+    display: table;
+    margin: 20px auto;
+}
+
+.portfolio {
+    background-color: lavender;
+    background-attachment: fixed;
+    padding: 50px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.folio {
+    width: 23%;
+    float: left;
+    padding: 30px 0;
+    background-color: #f5f21e;
+    margin: 8px;
+    text-align: center;
+    text-transform: capitalize;
+    border: 1px solid transparent;
+    position: relative;
+    transition: all 0.5s linear;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 1px #000;
+}
+
+.folio h3 {
+    font-family: 'Pattaya';
+}
+
+.folio p {
+    text-align: justify;
+    padding: 0 20px;
+}
+
+.after {
+    position: absolute;
+    height: 0px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    transition: all 0.5s ease-in-out;
+}
+
+.folio:hover {
+    border: 1px solid red;
+}
+
+.folio:hover .after {
+    height: 108px;
+}
+
+.after a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: linen;
+    text-transform: uppercase;
+    font-size: 18px;
+    border: 1px solid black;
+    padding: 10px 18px;
+    display: none;
+}
+
+.folio:hover .after a {
+    display: block;
+}
+
+.after a:hover {
+    color: red;
+    background-color: linen;
+    border-color: red;
+}
+
+/* portfolio css end */
+
+
+/* contact css start */
+.contact {
+    background-color: #dadada;
+    margin: 0px !important;
+    padding: 100px 0;
+}
+
+.contact_col {
+    width: 50%;
+    float: left;
+}
+
+.contact_col img {
+    height: 500px;
+    width: 100%;
+}
+
+.contact_col h1 {
+    display: table;
+    margin: 30px auto;
+}
+
+input,
+textarea,
+.contact_col a {
+    display: table;
+    margin: 30px auto;
+    border-style: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    text-align: center;
+    font-size: 18px;
+}
+
+input {
+    width: 50%;
+    padding-bottom: 15px;
+
+}
+
+textarea {
+    width: 60%;
+
+}
+
+input:focus,
+textarea:focus {
+    border-color: teal;
+}
+
+.contact_col a {
+    border: none;
+    text-transform: uppercase;
+    margin-top: 65px;
+    border: 1px solid red;
+    padding: 15px 30px;
+    border-radius: 30px;
+}
+
+.contact_col a:hover {
+    background-color: red;
+    color: snow;
+}
+
+/* contact css end */
+
+/* footer css start */
+.footer {
+    background-color: rgb(10, 10, 10);
+    padding: 15px 0;
+    color: cornsilk;
+    border-top: 3px solid silver;
+}
+
+.social {
+    width: 40%;
+    float: left;
+}
+
+.credit {
+    width: 20%;
+    text-align: center;
+}
+
+.location {
+    float: right;
+}
+
+.social ul li {
+    float: left;
+    padding: 0 15px;
+    transition: all 0.3s linear;
+    border: 1px solid transparent;
+
+}
+
+.social ul li:hover {
+    transform: translateY(-6px);
+    border-bottom: 1px solid linen;
+}
+
+.social ul li i {
+    color: cornsilk;
+    font-size: 30px;
+}
+
+.social ul li:hover i {
+    color: crimson;
+}
+
+address {
+    position: relative;
+}
+
+/* footer css end */
+
+/* go to top toggle css start */
+.goTop {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 40px;
+    color: navy;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1000;
+}
