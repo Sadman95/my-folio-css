@@ -570,63 +570,7 @@ nav {
 
 /* certification css end */
 
-/* trainings css start */
 
-/* trainings css end */
-.training{
-    background-color: #fff;
-    padding: 70px 0;
-}
-.training h1 {
-    width: 22%;
-    margin: auto;
-}
-.tBox{
-    margin: 50px 0;
-    position: relative;
-}
-.tOverlay{
-    position: absolute;
-    width: 35%;
-    height: 185px;
-    background-color: #fff0f594;
-    left: 1%;
-    top: 4%;
-    transform: scale(0);
-    transition: all 0.3s ease-in-out;
-}
-.tBox img{
-    height: 250px;
-    width: 450px;
-    box-shadow: 0 0 8px 2px;
-    transition: all 0.5s ease-in-out;
-    
-}
-.tBox:hover .tOverlay{
-    transform: scale(1);
-}
-.tBox:hover img{
-    height: 200px;
-    width: 400px;
-    box-shadow: none;
-    box-sizing: border-box;
-}
-.tshape{
-    width: 30px !important;
-    box-shadow: none !important;
-}
-.tBox p{
-    width: 50%;
-    float: right;
-    padding-top: 60px;
-    text-align: justify;
-}
-.tOverlay h3{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-}
 /* skills css start */
 #skills {
     background: url(../images/bg.jpg) left top no-repeat;
