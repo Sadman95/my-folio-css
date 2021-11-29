@@ -201,67 +201,7 @@ nav {
   }
 }
 
-.aboutMe::before {
-  position: absolute;
-  content: " ";
-  left: 40%;
-  top: 21%;
-  height: 2px;
-  width: 50px;
-  background-color: navy;
-}
 
-.myPhoto::before {
-  position: absolute;
-  content: " ";
-  left: 40%;
-  top: 1px;
-  height: 100%;
-  width: 2px;
-  background-color: navy;
-}
-
-.more::before {
-  position: absolute;
-  content: " ";
-  left: 10%;
-  top: -480%;
-  height: 2px;
-  width: 50px;
-  background-color: navy;
-  animation: none;
-}
-
-.aboutMe::after {
-  position: absolute;
-  content: " ";
-  right: 40%;
-  top: 100px;
-  height: 2px;
-  width: 50px;
-  background-color: navy;
-}
-
-.myPhoto::after {
-  position: absolute;
-  content: " ";
-  right: 40%;
-  top: 0;
-  height: 100%;
-  width: 2px;
-  background-color: navy;
-}
-
-.more::after {
-  position: absolute;
-  content: " ";
-  right: 10%;
-  top: -480%;
-  height: 2px;
-  width: 50px;
-  background-color: navy;
-  animation: none !important;
-}
 
 .aboutMe span {
   color: #000;
